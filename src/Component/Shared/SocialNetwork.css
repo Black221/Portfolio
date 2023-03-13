@@ -1,0 +1,26 @@
+
+
+.main {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 10px;
+    height: 220px;
+    top: calc(50% - 110px);
+    justify-content: space-between;
+}
+
+.rsx {
+    display: flex;
+    position: relative;
+    width: 160px;
+    justify-content: space-between;
+    height: 50px;
+    transition: linear 0.28s;
+    align-items: center;
+    right: 115px;
+}
+
+.rsx:hover {
+    right: 0;
+}

@@ -1,25 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from "../Component/Header/Header";
+import Footer from "../Component/Footer/Footer";
+import Container from "../Component/Container/Container";
+import NavBar from "../Component/Header/NavBar";
+import React, {useEffect, useState} from "react";
+import {useParams} from "react-router-dom";
+import SocialNetwork from "../Component/Shared/SocialNetwork";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const [page, setPage] = useState("Home")
+
+    const onLoadPage = (link) => {
+        setPage(link)
+    }
+    useEffect(() => {
+        console.log(page)
+    }, [page]);
+
+    return (
+        <div className="App">
+            <NavBar onLoadPage={onLoadPage} />
+            <SocialNetwork />
+            <Container location={page} />
+            {/*<Footer />*/}
+        </div>
+    );
 }
 
 export default App;

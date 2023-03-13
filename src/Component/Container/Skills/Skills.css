@@ -1,0 +1,81 @@
+.main-utils {
+    left: 100px;
+    top: 75px;
+    animation: rotate-utils linear 40s infinite;
+}
+
+.utils-a {
+    right: -350px;
+    rotate: 80deg;
+}
+
+.utils-d {
+    left: -350px;
+    rotate: 20deg;
+}
+
+
+.utils-b {
+    right: -180px;
+    top: -300px;
+    rotate: 45deg;
+}
+
+.utils-c {
+    left: -180px;
+    top: -300px;
+    rotate: 25deg;
+}
+
+.utils-e {
+    left: -180px;
+    bottom: -300px;
+    rotate: -45deg;
+}
+
+.utils-f {
+    right: -180px;
+    bottom: -300px;
+    rotate: -90deg;
+}
+
+@keyframes rotate-utils {
+    from {transform: rotate(360deg);
+    } to {transform: rotate(0deg);}
+}
+
+.list-a {
+    margin-top: 20px;
+    transform: translateX(10px);
+    transition: linear 0.5s;
+}
+
+.list-b {
+    transform: translateX(25px);
+    transition: linear 0.75s;
+}
+
+.list-c {
+    transform: translateX(40px);
+    transition: linear 0.9s;
+}
+
+.list-d {
+    transform: translateX(55px);
+    transition: linear 1s;
+}
+
+.list-e {
+    transform: translateX(70px);
+    transition: linear 1.05s;
+}
+
+.list-f {
+    transform: translateX(85px);
+    transition: linear 1.08s;
+}
+
+.list-g {
+    transform: translateX(100px);
+    transition: linear 1s;
+}

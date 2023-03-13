@@ -1,0 +1,17 @@
+
+
+.main-shell {
+    position: absolute;
+    top: 100px;
+    left: 180px;
+    transition: linear .4s;
+}
+
+.text-shell {
+    font-family: "Crimson Text", sans-serif;
+}
+
+.translate-shell {
+    transition: linear .4s;
+    transform: translate(calc(50vw - 400px), calc(50vh - 175px));
+}

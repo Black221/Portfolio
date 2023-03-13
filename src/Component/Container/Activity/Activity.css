@@ -1,0 +1,54 @@
+.Activity-slide {
+    width: 75vw;
+    height: 360px;
+    overflow: hidden;
+    align-items: end;
+    transition: linear 1s ;
+    transform: translate(0);
+}
+
+.project {
+    position: absolute;
+    width: 260px;
+    height: 320px;
+    background: rgba(152, 27, 27, 0.99);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+}
+
+
+.center {
+    margin-bottom: 35px;
+    transition: ease-in 0.4s;
+    box-shadow: 0 10px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.middle {
+    margin-bottom: 15px;
+    opacity: 0.6;
+    box-shadow: 0 5px 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+.end {
+    opacity: 0.3;
+}
+
+
+.a {
+    transform: translateX(-560px);
+    transition: ease-in 0.4s;
+}
+.b {
+    transform: translateX(-280px);
+    transition: ease-in 0.4s;
+}
+.c {
+    transform: translateX(280px);
+    transition: ease-in 0.4s;
+}
+.d {
+    transform: translateX(560px);
+    transition: ease-in-out 0.4s;
+}
+

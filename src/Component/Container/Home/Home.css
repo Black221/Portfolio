@@ -1,0 +1,71 @@
+
+
+.text {
+    display: flex;
+    align-items: center;
+    font-family: 'Crimson Text', sans-serif;
+    text-align: justify;
+    min-height: 100px;
+    min-width: 250px;
+    transition: linear 0.25s;
+    opacity: 1;
+    align-self: center;
+}
+
+
+.text-button button {
+    font-family: 'Crimson Text', sans-serif;
+    letter-spacing: 2px;
+    background: #981b1b;
+}
+
+
+.shell {
+    font-family: 'Crimson Text', sans-serif;
+    position: relative;
+}
+
+.left-bar {
+    position: absolute;
+    transform: translate(-50px, -45px);
+}
+
+.left-bar .v-bar {
+    position: absolute;
+    top: 25px;
+}
+
+.prompt {
+    position: relative;
+    top: 15px;
+}
+
+.who {
+    transition: linear 0.25s;
+    animation: anime 0.5s 1;
+}
+
+.logo {
+    animation: animeLogo ease-in-out 8s infinite ;
+}
+
+@keyframes anime {
+    from {
+        opacity: 0;
+        transform: translateX(-150px);
+    } to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes animeLogo {
+    0% {
+        transform: translate(50px, 50px) rotate(18deg);
+    }50% {
+        transform: translateY(-120px) rotate(-15deg);
+    } 100% {
+       transform: translate(50px, 50px) rotate(18deg);
+
+   }
+}
